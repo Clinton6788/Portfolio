@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock css %}
+
+{% block title %} New Project {% endblock title %}
+
+
+{% block content %}
+<section class="new-project-section center-column">
+    <h2>New Project</h2>
+
+    <form id="projectForm" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <div class="controls"> 
+            <button type="reset" class="secondary-button">Reset Form</button>
+            <button type="submit" class="primary-button">Save Project</button>
+        </div>
+    </form>
+</section>
+{% endblock content %}

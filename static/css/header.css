@@ -1,0 +1,27 @@
+header {
+    background-color: var(--surface-color);
+    height: 8vh;
+}
+.header-left-side {
+    width: 30%;
+}
+.header-left-side img {
+    max-height: 8vh;
+}
+.header-right-side {
+    width: 70%;
+}
+.nav-options {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1rem;
+    align-items: center;
+}
+.nav-options a {
+    color: var(--neutral-color);
+    text-transform: uppercase;
+}
+.nav-options a:hover {
+    border-bottom: solid 2px var(--primary-color);
+}

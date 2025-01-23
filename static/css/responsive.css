@@ -1,0 +1,46 @@
+/* Small Screen: Max-width: 640px */
+@media(max-width: 640px) {
+    html{
+        font-size: 12px;
+    }
+    .about-main{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .about-text{
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        height: max-content;
+        padding: 1rem;
+    }
+    .header-right-side{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .nav-options{
+        flex-direction: column;
+    }
+    .nav-options a{
+        margin: 0.5rem 0;
+    }
+
+}
+
+
+/* Medium Screen: 641px-1007px */
+@media((min-width: 641px) and (max-width: 1007px)) {
+    html{
+        font-size: 14px;
+    }
+    .about-main{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .about-text{
+        width: 90%;
+    }
+}

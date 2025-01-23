@@ -1,0 +1,55 @@
+.project-sect{
+    margin-top: 6rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.project-sect h2 {
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    background-color: var(--surface-color);
+}
+.project-display{
+    justify-content: space-evenly;
+}
+.project-card{
+    width: 25rem;
+    flex-wrap: wrap;
+}
+.project-img img{
+    max-width: 100%;
+}
+.project-text{
+    padding: 1rem 0;
+}
+.project-text h3,h4{
+    color: var(--primary-color);
+    text-align: center;
+}
+.project-text p{
+    margin: 1rem 0;
+}
+.project-skills{
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Project Form */
+#projectForm{
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    width: 35rem;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    padding: 0 2%;
+    border: solid 1px var(--secondary-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

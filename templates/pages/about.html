@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock css %}
+
+{% block title %} About {% endblock title %}
+
+
+
+{% block content %}
+<div class="about-main">
+    <div class="about-img">
+        <img src="{% static 'img/logo.png' %}" alt="">
+    </div>
+    <div class="about-text">
+        <h1>Full Stack Developer</h1>
+        <h2>Hi! My name is Clinton,</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, esse, sed atque unde nihil aliquam obcaecati, earum voluptatibus dolores consequatur iure maiores quos possimus velit. Dignissimos reprehenderit, deleniti quia dolor nihil temporibus sed, earum explicabo voluptas eaque, voluptates sequi facere exercitationem. Necessitatibus dignissimos maiores, voluptatum ex possimus iste fugiat? Incidunt libero possimus amet voluptatem animi velit, facilis pariatur, aperiam nulla ab quia eos qui dolor porro id nobis. Alias optio officia ipsum exercitationem distinctio consectetur!</p>
+        <div class="skills-sect">
+            <h2>My Skills</h2>
+            <div class="skill-row center-row">
+                <label class="text-label">Python</label>
+                <label class="text-label">JavaScript</label>
+                <label class="text-label">HTML</label>
+                <label class="text-label">CSS</label>
+                <label class="text-label">React</label>
+                <label class="text-label">SQL</label>
+                <label class="text-label">NoSQL</label>
+                <label class="text-label">Flask</label>
+                <label class="text-label">Rest APIs</label>
+                <label class="text-label">WebSockets</label>
+                <label class="text-label">Node.js</label>
+                <label class="text-label">Django</label>
+                <label class="text-label">Figma</label>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
