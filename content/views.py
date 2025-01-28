@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView,CreateView
+from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
 from .models import Project
 from .forms import ProjectForm
@@ -25,3 +26,9 @@ def project_new(request):
         form = ProjectForm()
 
     return render(request, "content/project_new.html", {"form": form})
+
+class ProjectCreateView(CreateView):
+    model = Project
+    form_class = ProjectForm
+    template_name = "content/project_new.html"
+    success_url = reverse_lazy("projects_list")

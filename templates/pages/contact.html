@@ -2,9 +2,17 @@
 {% load static %}
 
 {% block css %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
 {% endblock css %}
 
 {% block title %} Contact {% endblock title %}
 {% block content %}
-<h1>This is my Contact</h1>
+<div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
 {% endblock content %}
