@@ -32,3 +32,7 @@ class ProjectCreateView(CreateView):
     form_class = ProjectForm
     template_name = "content/project_new.html"
     success_url = reverse_lazy("projects_list")
+
+class ExperienceListView(TemplateView):
+    template_name = "experience/experience_list.html"
+    

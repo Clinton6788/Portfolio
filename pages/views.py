@@ -10,9 +10,6 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = "pages/about.html"
 
-class ExperiencePageView(TemplateView):
-    template_name = "pages/experience.html"
-
 def contact_view(request):
     if request.method == "POST":
         form = ContactForm(request.POST)

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/experience.css' %}">
+{% endblock css %}
+
+{% block title %} Experience {% endblock title %}
+{% block content %}
+<div class="experience-section center-column">
+    <h2>My Experience</h2>
+    <div class="experience-list">
+        <div class="experience-card">
+            <p>Name of School or Company</p>
+            <p>Name of Program or Position</p>
+            <p>Short Description</p>
+            <p>From-to</p>
+            <div class="skills-container">
+                <label for="" class="text-label">Skill</label>
+                <label for="" class="text-label">Skill</label>
+                <label for="" class="text-label">Skill</label>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
